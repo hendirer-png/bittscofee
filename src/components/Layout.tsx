@@ -33,12 +33,12 @@ export default function Layout({ user, onLogout }: { user: any, onLogout: () => 
     <div className="min-h-screen bg-[#FDFCFB] text-[#2D241E]">
       {/* Sidebar */}
       <aside className="fixed left-0 top-0 h-full w-64 bg-white border-r border-[#E8E1D9] p-6 hidden md:flex flex-col">
-        <div className="flex items-center gap-3 mb-10 px-2">
+        <Link to="/admin" className="flex items-center gap-3 mb-10 px-2 hover:opacity-80 transition-opacity">
           <div className="w-10 h-10 bg-[#6F4E37] rounded-xl flex items-center justify-center text-white">
             <Coffee size={24} />
           </div>
           <h1 className="font-bold text-xl tracking-tight">Bean & Brew</h1>
-        </div>
+        </Link>
 
         <div className="mb-8 px-2 py-3 bg-[#FDFCFB] rounded-2xl border border-[#E8E1D9]">
           <p className="text-[10px] font-bold uppercase text-[#8C7B6E] tracking-wider mb-1">Pengguna</p>

@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { api, Product, Category, CustomizationOption, CustomizationGroup, Table, CafeProfile } from '../lib/api';
 import { ShoppingCart, Plus, Minus, X, ChevronDown, ChevronUp, Check, MapPin, User, Instagram, Facebook, Twitter, Phone, Mail } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
@@ -228,11 +228,13 @@ export default function Menu() {
     <div className="relative pb-20">
       <header className="mb-8 space-y-4">
         <nav className="flex items-center gap-2 text-xs text-[#8C7B6E] font-medium">
-          <span>Beranda</span>
+          <Link to="/" className="hover:text-[#6F4E37] transition-colors">Beranda</Link>
           <span className="text-[#E8E1D9]">/</span>
-          <span>Serang</span>
+          <span className="cursor-default">Serang</span>
           <span className="text-[#E8E1D9]">/</span>
-          <span className="text-[#6F4E37]">{profile?.name || 'Bitts Coffee'} {profile?.address}</span>
+          <Link to="/menu" className="text-[#6F4E37] hover:underline font-bold transition-colors">
+            {profile?.name || 'Bitts Coffee'} {profile?.address}
+          </Link>
         </nav>
         
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
