@@ -1,0 +1,20 @@
+:root {
+  /* App Colors - Coffee Theme */
+  --color-bg: #FDFCFB;
+  --color-surface: #ffffff;
+  --color-text-primary: #2D241E;
+  --color-text-secondary: #8C7B6E;
+  --color-accent: #6F4E37;
+  --color-accent-hover: #5A3F2D;
+  --color-border: #E8E1D9;
+  --color-success: #16a34a;
+  --color-danger: #dc2626;
+
+  /* iOS Safe Area Variables */
+  --safe-area-inset-top: env(safe-area-inset-top, 0px);
+  --safe-area-inset-bottom: env(safe-area-inset-bottom, 0px);
+  --safe-area-inset-left: env(safe-area-inset-left, 0px);
+  --safe-area-inset-right: env(safe-area-inset-right, 0px);
+
+  color-scheme: light;
+}
